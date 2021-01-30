@@ -14,7 +14,7 @@ while(userGuess != randNmber):
         if(userGuess>randNmber):
             print(f"Ughhhh ..you guessed pretty higher...go for lower number :)")
         elif userGuess<randNmber:
-            print("you guessed your penis size bro... go for higher number" )
+            print("you guessed number just like your PP size bro... go for higher number" )
 
 
 print(f"YOu guessed in {Guess} times")

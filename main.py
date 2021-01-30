@@ -1,6 +1,5 @@
 import random
 randNmber = random.randint(1,100)
-# print(randNmber)
 Guess = 0
 userGuess = None
 
@@ -18,6 +17,12 @@ while(userGuess != randNmber):
             print("you guessed your penis size bro... go for higher number" )
 
 
-
-
 print(f"YOu guessed in {Guess} times")
+
+with open("highscore.txt")as f:
+    highscore = int(f.read())
+
+if Guess<highscore:
+    print("You got a BIG PP ...")
+    with open("highscore.txt", 'w') as f:
+        f.write(str(Guess))
